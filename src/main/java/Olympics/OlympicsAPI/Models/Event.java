@@ -11,11 +11,8 @@ import javax.persistence.*;
 @Getter
 @Data
 @Entity
-public class Athelte {
+public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long athelteId;
-    String name;
-    String nationality;
-    String sport;
+    Long eventId;
 }
