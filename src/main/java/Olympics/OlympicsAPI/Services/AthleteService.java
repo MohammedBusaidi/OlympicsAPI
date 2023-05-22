@@ -11,6 +11,7 @@ import java.util.List;
 public class AthleteService {
     @Autowired
     AthleteRepository athleteRepository;
+
     public List<Athlete> getAllAthletes() {
         return athleteRepository.findAll();
     }
@@ -18,6 +19,7 @@ public class AthleteService {
     public Athlete findByID(Long athleteId) {
         return athleteRepository.findById(athleteId).get();
     }
+
     public Athlete addAthlete(Athlete athlete) {
         return athleteRepository.save(athlete);
     }

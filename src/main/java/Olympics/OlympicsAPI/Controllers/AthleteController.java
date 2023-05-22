@@ -22,6 +22,7 @@ public class AthleteController {
     public Athlete getById(@PathVariable("id") Long athleteId) {
         return athleteService.findByID(athleteId);
     }
+
     @PostMapping(value = "Add")
     Athlete createAthlete(@RequestBody Athlete athlete) {
         return athleteService.addAthlete(athlete);

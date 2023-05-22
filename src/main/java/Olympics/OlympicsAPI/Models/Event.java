@@ -19,6 +19,7 @@ public class Event {
     String nameOfEvent;
     String sport;
     String schedule;
-    @ManyToMany
-    public List<Athlete> athletes;
+    @ManyToOne
+    @JoinColumn(name = "athlete_id")
+    private Athlete athlete;
 }

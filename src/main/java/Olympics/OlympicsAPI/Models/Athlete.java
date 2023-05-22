@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.*;
+import java.util.List;
 
 @Setter
 @Getter
@@ -19,4 +20,6 @@ public class Athlete  {
     String name;
     String nationality;
     String sport;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "athlete")
+    private List<Event> events;
 }
