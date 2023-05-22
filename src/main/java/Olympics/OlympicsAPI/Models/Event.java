@@ -15,4 +15,7 @@ public class Event {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long eventId;
+    String nameOfEvent;
+    String sport;
+    String schedule;
 }
