@@ -20,5 +20,5 @@ public class Event {
     String sport;
     String schedule;
     @ManyToMany
-    public List<Athelte> atheltes;
+    public List<Athlete> athletes;
 }

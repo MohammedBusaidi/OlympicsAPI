@@ -12,10 +12,10 @@ import javax.persistence.*;
 @Data
 @Entity
 @Table(name = "Athlete")
-public class Athelte {
+public class Athlete  {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long athelteId;
+    Long athleteId;
     String name;
     String nationality;
     String sport;
