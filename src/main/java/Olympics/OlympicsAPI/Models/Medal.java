@@ -6,19 +6,14 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.*;
-import java.util.List;
 
 @Setter
 @Getter
 @Data
 @Entity
-public class Event {
+public class Medal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long eventId;
-    String nameOfEvent;
-    String sport;
-    String schedule;
-    @ManyToMany
-    public List<Athelte> atheltes;
+    Long medalId;
+    String typeOfMedal;
 }
