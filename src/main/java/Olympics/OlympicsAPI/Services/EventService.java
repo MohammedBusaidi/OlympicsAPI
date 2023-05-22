@@ -15,5 +15,11 @@ public class EventService {
     public List<Event> getAllEvents() {
         return eventRepository.findAll();
     }
+    public Event findByID(Long eventId) {
+        return eventRepository.findById(eventId).get();
+    }
+    public Event addEvent(Event event) {
+        return eventRepository.save(event);
+    }
 
 }
